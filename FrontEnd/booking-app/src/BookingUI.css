@@ -1,0 +1,150 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    overflow-x: hidden;
+  }
+  
+  .container {
+    width: 100%;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Form Styles */
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  input, select, button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  input[type="datetime-local"] {
+    font-family: Arial, sans-serif;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  /* Available Timings Section */
+  h3 {
+    margin-top: 30px;
+    text-align: center;
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  /* li {
+    background-color: #f1f1f1;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    text-align: center;
+  } */
+  
+  /* Booking List Styles */
+  .booking-list {
+    margin-top: 40px;
+  }
+  
+  .booking-list ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .booking-list li {
+    background-color: #fafafa;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+  }
+  
+  .booking-list li span {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  .booking-list h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .loading, .error {
+    text-align: center;
+    font-size: 18px;
+    color: #e74c3c;
+    margin-top: 20px;
+  }
+  
+  /* Mobile Responsiveness */
+  @media (max-width: 600px) {
+    .container {
+      width: 90%;
+      padding: 15px;
+    }
+  
+    button {
+      font-size: 14px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .App-container {
+        padding: 10px;
+        gap: 20px;
+    }
+}
+
+  

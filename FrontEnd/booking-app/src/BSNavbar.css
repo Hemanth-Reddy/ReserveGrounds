@@ -1,0 +1,63 @@
+/* Default Navbar Styling */
+.custom-navbar {
+  transition: all 0.3s ease-in-out;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  z-index: 1000;
+}
+
+.custom-navbar .navbar-brand {
+  color: white;
+  font-size: 24px;
+  margin-left: 20px;
+  transition: font-size 0.3s ease;
+}
+
+.custom-navbar .nav-link {
+  color: white;
+  margin-right: 20px;
+  transition: color 0.3s ease;
+}
+
+.custom-navbar .nav-link:hover {
+  color: #00bcd4;
+}
+
+/* Shrinked Navbar Styling */
+.navbar-scrolled {
+  height: 60px; /* Shrink the navbar */
+  background-color: rgba(51, 51, 51, 0.9); /* Slight transparency */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-scrolled .navbar-brand {
+  font-size: 20px; /* Reduce font size */
+}
+
+/* Styling for collapsed menu */
+.custom-navbar .navbar-collapse {
+  background-color: black; /* Match the navbar background */
+}
+
+.custom-navbar .nav-item {
+  text-align: center;
+  margin: 10px 0; /* Add space between items in mobile view */
+}
+
+/* Styling for toggler button */
+.custom-navbar .navbar-toggler {
+  border-color: black;
+}
+
+.custom-navbar .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255,1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .custom-navbar .nav-link {
+    margin-right: 20px;
+    padding: 10px;
+  }
+}
